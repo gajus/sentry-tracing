@@ -16,4 +16,4 @@ Actual result: cannot find span ID.
 ## Notes
 
 - This works only with `pnpm` because we use `package.json#resolutions` to force packages to use the same version.
-- It is important to use `resolutions` for `@opentelemetry/*` because Sentry might use older versions packages. Loading multiple versions of `@opentelemetry/*` packages will cause issues.
+- It is important to use `resolutions` for `@opentelemetry/*` because Sentry might use older package versions. Loading multiple versions of `@opentelemetry/*` packages will cause issues.
