@@ -1,4 +1,4 @@
-# Example of Sentry tracing using OpenTelemetry and ESM modules
+# Sentry Tracing with OpenTelemetry
 
 ```bash
 pnpm install
