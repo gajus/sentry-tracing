@@ -1,7 +1,6 @@
 import { register } from "node:module";
 import { pathToFileURL } from "node:url";
 import { createSentry } from './createSentry.js';
-import { setTimeout as delay } from 'timers/promises';
 
 register("import-in-the-middle/hook.mjs", pathToFileURL("./"));
 
