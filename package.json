@@ -1,32 +1,24 @@
 {
   "name": "sentry-tracing",
   "version": "1.0.0",
-  "type": "module",
   "dependencies": {
-    "@opentelemetry/api": "^1.7.0",
-    "@opentelemetry/auto-instrumentations-node": "^0.41.1",
-    "@opentelemetry/context-async-hooks": "^1.21.0",
-    "@opentelemetry/exporter-trace-otlp-grpc": "^0.48.0",
-    "@opentelemetry/sdk-node": "^0.48.0",
-    "@opentelemetry/sdk-trace-base": "^1.21.0",
-    "@sentry/node": "^7.100.1",
-    "@sentry/opentelemetry": "^7.100.1",
-    "@sentry/profiling-node": "^7.100.1",
-    "@sentry/types": "^7.100.1",
+    "@sentry/node": "^8.0.0-alpha.4",
+    "@sentry/opentelemetry": "^8.0.0-alpha.4",
+    "@sentry/utils": "^8.0.0-alpha.4",
+    "@sentry/profiling-node": "^8.0.0-alpha.4",
+    "@sentry/types": "^8.0.0-alpha.4",
     "fastify": "^4.24.3",
     "import-in-the-middle": "1.7.3",
     "tsx": "^4.7.0"
   },
   "resolutions": {
-    "import-in-the-middle": "1.7.3",
-    "@opentelemetry/api": "1.7.0",
-    "@opentelemetry/auto-instrumentations-node": "0.41.1",
-    "@opentelemetry/context-async-hooks": "1.21.0",
-    "@opentelemetry/exporter-trace-otlp-grpc": "0.48.0",
-    "@opentelemetry/sdk-node": "0.48.0",
-    "@opentelemetry/sdk-trace-base": "1.21.0"
+    "import-in-the-middle": "1.7.3"
   },
   "scripts": {
+    "build": "tsc",
     "start": "OTEL_LOG_LEVEL=debug node app/server.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.2"
   }
 }
