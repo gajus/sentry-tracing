@@ -1,8 +1,8 @@
-// import { register } from "node:module";
-// import { pathToFileURL } from "node:url";
+import { register } from "node:module";
+import { pathToFileURL } from "node:url";
 import { createSentry } from './createSentry.js';
 
-// register("import-in-the-middle/hook.mjs", pathToFileURL("./"));
+register("import-in-the-middle/hook.mjs", pathToFileURL("./"));
 
 const main = async () => {
   await createSentry();

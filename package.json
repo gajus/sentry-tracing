@@ -1,12 +1,13 @@
 {
   "name": "sentry-tracing",
   "version": "1.0.0",
+  "type": "module",
   "dependencies": {
     "@sentry/node": "^8.0.0-alpha.4",
     "@sentry/opentelemetry": "^8.0.0-alpha.4",
-    "@sentry/utils": "^8.0.0-alpha.4",
     "@sentry/profiling-node": "^8.0.0-alpha.4",
     "@sentry/types": "^8.0.0-alpha.4",
+    "@sentry/utils": "^8.0.0-alpha.4",
     "fastify": "^4.24.3",
     "import-in-the-middle": "1.7.3",
     "tsx": "^4.7.0"
@@ -16,7 +17,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "start": "OTEL_LOG_LEVEL=debug node app/server.js"
+    "start": "OTEL_LOG_LEVEL=debug node dist/server.js"
   },
   "devDependencies": {
     "typescript": "^5.4.2"
