@@ -1,5 +1,5 @@
 import createFastify from 'fastify';
-import { getActiveSpan } from '@sentry/opentelemetry';
+import { getActiveSpan } from '@sentry/node';
 
 export const startServer = async () => {
   const app = createFastify();
